@@ -80,43 +80,43 @@ int main(int argc,char *argv[]){
                 printf("\nDERROTA\n");
                 d++;
             }
-            if((jog=='s' || ia=='s') && (jog='t' || ia=='t')){
+            if((jog=='s' || ia=='s') && (jog=='t' || ia=='t')){
                 printf("Spock quebra a tesoura!");
             }
             else{
-                if((jog=='t' || ia=='t') && (jog='p' || ia=='p')){
+                if((jog=='t' || ia=='t') && (jog=='p' || ia=='p')){
                     printf("Tesoura corta o papel!");
                 }
                 else{
-                    if((jog=='p' || ia=='p') && (jog='r' || ia=='r')){
+                    if((jog=='p' || ia=='p') && (jog=='r' || ia=='r')){
                         printf("Papel cobre a pedra!");
                     }
                     else{
-                        if((jog=='r' || ia=='r') && (jog='l' || ia=='l')){
+                        if((jog=='r' || ia=='r') && (jog=='l' || ia=='l')){
                             printf("A pedra esmaga o lagarto!");
                         }
                         else{
-                            if((jog=='l' || ia=='l') && (jog='s' || ia=='s')){
+                            if((jog=='l' || ia=='l') && (jog=='s' || ia=='s')){
                                 printf("O lagarto envenena o Spock!");
                             }
                             else{
-                                if((jog=='s' || ia=='s') && (jog='r' || ia=='r')){
+                                if((jog=='s' || ia=='s') && (jog=='r' || ia=='r')){
                                     printf("Spock vaporiza a pedra!");
                                 }
                                 else{
-                                    if((jog=='s' || ia=='s') && (jog='p' || ia=='p')){
+                                    if((jog=='s' || ia=='s') && (jog=='p' || ia=='p')){
                                         printf("O papel refuta Spock!");
                                     }
                                     else{
-                                        if((jog=='t' || ia=='t') && (jog='l' || ia=='l')){
+                                        if((jog=='t' || ia=='t') && (jog=='l' || ia=='l')){
                                             printf("A tesoura mata o lagarto!");
                                         }
                                         else{
-                                            if((jog=='r' || ia=='r') && (jog='t' || ia=='t')){
+                                            if((jog=='r' || ia=='r') && (jog=='t' || ia=='t')){
                                                 printf("A pedra quebra a tesoura!");
                                             }
                                             else{
-                                                if((jog=='p' || ia=='p') && (jog='l' || ia=='l')){
+                                                if((jog=='p' || ia=='p') && (jog=='l' || ia=='l')){
                                                     printf("O lagarto come o papel!");
                                                 }
                                             }
