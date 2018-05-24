@@ -130,7 +130,7 @@ int main(int argc,char *argv[]){
             }
         }
         printf("\n");
-        printf("\nVITORIAS: %d   EMPATES: %d   DERROTAS: %d\nDeseja jogar novamente?",v,e,d);
+        printf("\nVITORIAS: %d   EMPATES: %d   DERROTAS: %d\nDeseja jogar novamente?(s/n)",v,e,d);
         resp=getchar();
         getchar();
         system("cls");
