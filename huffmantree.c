@@ -1,4 +1,5 @@
-//huffman com uma palavra
+/*Project huffmantree
+auhtor andrenascimento*/
 
 #include <stdio.h>
 #include <stdlib.h>
