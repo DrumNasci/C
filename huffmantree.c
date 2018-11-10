@@ -16,8 +16,13 @@ typedef struct no{      //estrutura da árvore
 	struct no *esq; 
 }noArv; 
 
+typedef struct{
+	char code[100];
+	int dispo;
+}conv;
+
 int alfa[26];          //vetor de ocorrencias
-int alfa_conv[26];
+conv alfa_conv[26];
 
 noArv *pont_vet[MAX]; //vetor de ponteiros
 
@@ -61,7 +66,7 @@ void imprime(int comp){
 void inicia_alfa(){  //inicia o vetor de ocorrencias com 0
 	for(int i=0; i<26; i++){
 		alfa[i] = 0;
-		alfa_conv[i] = -1;
+		alfa_conv[i].dispo = -1;
 	}
 }
 
@@ -92,10 +97,34 @@ void imprime_emo(noArv *n){
 	}
 }
 
+void dicionario(noArv *n, char chave[]){ //chamar com raiz
+	char aux1[100], aux2[100];
+	if(n != NULL){
+		if(n->letra != ' '){
+			strcpy(alfa_conv[n->letra-97].code, chave);
+			alfa_conv[n->letra-97].dispo = 1;
+		}
+		else{
+			strcpy(aux1, chave);
+			strcpy(aux2, chave);
+			dicionario(n->esq, strcat(aux1, "0"));
+			dicionario(n->dir, strcat(aux2, "1"));
+		}
+	}
+}
+
+void imprime_dic(){
+	for(int i=0; i<26; i++){
+		if(alfa_conv[i].dispo != -1){
+			printf("[%c %s]\n", i+97, alfa_conv[i].code);
+		}
+	}
+}
 
 int main(){
-	char palavra[MAX];
+	char palavra[MAX], chave[] = "";
 	int i, j, comp, cont=0, soma=0;
+	inicia_alfa();
 	fgets(palavra, MAX, stdin);
 	comp = strlen(palavra);
 	for(i=0; i<comp; i++){
@@ -118,8 +147,13 @@ int main(){
 	printf("\n");
 	imprime_emo(pont_vet[0]);
 	
+	dicionario(pont_vet[0], chave);
 	
+	printf("\n");
+	
+	imprime_dic();
 	
 	printf("\n");
 	return 0;
 }
+
