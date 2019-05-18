@@ -617,6 +617,6 @@ int main(int argc,char *argv[]){                                       //int mai
     }while(a==0);
     system("cls");      //tela final
     printf("\n\n\n\n\n\n\n\n\n\n                       Obrigado por jogar! :)\n\n");
-    printf("         Nesta sessao: (%d)Ganhas (%d)Abandonadas  (%d)Perdidas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                       ©Andre Nascimento\n                 https://github.com/DrumNasci\n",partidas[0],partidas[1],partidas[2]);
+    printf("         Nesta sessao: (%d)Ganhas (%d)Abandonadas  (%d)Perdidas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                       ©Andre Nascimento\n                 https://github.com/AndreNasci\n",partidas[0],partidas[1],partidas[2]);
 return 0;
 }
