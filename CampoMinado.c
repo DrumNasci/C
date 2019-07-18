@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+//comentário
 /*Project CampoMinado
 auhtor andrenascimento*/
 void _vizinho(int i, int j,char jogo[10][10]){
